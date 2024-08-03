@@ -1,0 +1,108 @@
+main {
+  margin-top: 150px;
+}
+
+.search-input {
+  width: 100%;
+  background-color: var(--bg-dark);
+  border: 1.5px solid var(--primary-color);
+  padding: 8px 16px;
+  padding-right: 48px;
+  color: var(--text-light);
+  background-image: url(../images/search-icon.svg);
+  background-size: 24px;
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+}
+
+.search-input::placeholder {
+  color: var(--text-primary);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/* COLLECTION SECTION */
+.collection-tab ul{
+  display: inline-flex;
+  border-bottom: 1.5px solid var(--primary-color);
+}
+
+.collection-tab .nav-link {
+  color: var(--text-light);
+  font-family: "Playfair Display", serif;
+  padding: 8px 24px;
+}
+
+.collection-tab .nav-link:hover {
+  color: var(--text-primary);
+}
+
+.collection-tab .nav-link.active {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+/* COLLECTION LIST */
+.collection-item {
+  display: block;
+  width: 100%;
+  background-color: var(--bg-dark);
+  border: 1.5px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.collection-item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: .3s;
+}
+
+.collection-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4) 20%, rgb(0, 0, 0, 1) 250%);
+  width: 100%;
+  padding: 8px 24px;
+}
+
+.collection-body .title {
+  font-size: 24px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.collection-item:hover img {
+  transform: scale(1.3);
+}
+
+@media (max-width: 991.98px) {
+    .collection-body {
+      padding: 8px 14px;
+    }
+}
+
+@media (max-width: 767.98px) {
+  .collection-tab {
+    overflow: auto;
+  }
+  .collection-tab ul{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    border-bottom: 1.5px solid var(--primary-color);
+    min-width: 200px;
+  }
+
+  .collection-body {
+    position: static;
+    padding: 8px;
+  }
+  .collection-body .title {
+    font-size: 20px;
+  }
+}

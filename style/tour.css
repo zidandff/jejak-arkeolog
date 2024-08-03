@@ -1,0 +1,44 @@
+main {
+  margin-top: 120px;
+}
+
+/* virtual tour */
+.select-wrapper {
+  display: inline-flex;
+  /* border-bottom: 1px solid var(--primary-color); */
+  align-items: center;
+}
+
+.form-select:focus {
+  box-shadow: none;
+}
+
+.select-wrapper .form-select {
+  background-color: transparent;
+  border: none;
+  color: var(--text-light);
+  font-size: 32px;
+  font-family: 'Playfair', serif;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dee2e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-position: right 22px;
+  background-size: 18px;
+  padding-right: 40px;
+}
+
+.select-wrapper .form-select option {
+  background-color: var(--bg-dark);
+  font-family: 'Raleway' sans-serif;
+  font-size: 18px;
+}
+
+iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+@media(max-width: 767.98px){
+  .select-wrapper .form-select {
+    font-size: 24px;
+  }
+}

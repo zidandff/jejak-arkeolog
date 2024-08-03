@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --text-primary: #917240;
+  --text-light: #B6B6B6;
+  --text-secondary: rgba(222, 226, 230, 0.75);
+  --primary-color: #5F4B2B;
+  --bg-dark: #20180C;
+}
+
+body {
+  background-color: #0C0702;
+  overflow-x: hidden;
+}
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-light {
+  color: var(--text-light) !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.text-display {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+p, a, span, button, small {
+  font-family: "Raleway", sans-serif;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  padding: 6px 32px;
+  border-radius: 0;
+  color: var(--text-light);
+  border: .7px solid var(--primary-color);
+  transition: .2s;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button-primary:hover,
+.button-primary:active {
+  background-color: #4e3c21;
+}
+
+.button-primary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(230, 173, 82, 0.5);
+  outline: none;
+}
+
+.button-secondary {
+  padding: 6px 32px;
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: .7px solid var(--primary-color);
+  transition: .2s;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button-secondary:hover,
+.button-secondary:active {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.button-secondary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(230, 173, 82, 0.5);
+  outline: none;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 0px 0 20px;
+  z-index: 3;
+}
+.navbar.scroll {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* footer */
+footer {
+  background-color: #20180C;
+  margin-top: 150px;
+  padding: 60px 0;
+}
+
+.nav-footer p {
+  font-size: 20px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.nav-footer ul {
+  padding: 0;
+}
+
+.nav-footer li {
+  list-style: none;
+  padding: 3px 0;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #B6B6B6;
+
+}
+
+.social-icon a {
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
