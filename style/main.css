@@ -43,7 +43,7 @@ p, a, span, button, small {
   background-color: var(--primary-color);
   padding: 6px 32px;
   border-radius: 0;
-  color: var(--text-light);
+  color: #FFFFFF;
   border: .7px solid var(--primary-color);
   transition: .2s;
   font-weight: 400;
@@ -64,7 +64,7 @@ p, a, span, button, small {
   padding: 6px 32px;
   border-radius: 0;
   background-color: transparent;
-  color: var(--text-primary);
+  color: #93733f;
   border: .7px solid var(--primary-color);
   transition: .2s;
   font-weight: 400;

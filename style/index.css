@@ -116,7 +116,7 @@ section {
 
 .event-item a {
   text-decoration: none;
-  color: var(--text-primary);
+  color: #de9725;
 }
 
 .event-item a:hover {
@@ -194,7 +194,7 @@ section {
 
 .ticket-item.primary .button-secondary {
   border-color: var(--text-light);
-  color: var(--text-light);
+  color: #fff;
 }
 
 .ticket-item.primary .button-secondary:hover {
